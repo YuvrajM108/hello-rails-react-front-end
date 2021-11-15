@@ -4,7 +4,7 @@ const GET_GREETING = 'greeting/message/GET_GREETING';
 
 const initialState = {
   message: '',
-}
+};
 
 const requestURL = 'http://hello-rails-react-ym108.herokuapp.com/api/greetings';
 
@@ -13,12 +13,12 @@ export const getGreeting = () => async (dispatch) => {
   const messages = res.data;
   const messageArr = [];
   let randomMsg = '';
-  if(messages) {
+  if (messages) {
     messages.forEach((obj) => {
       const messageText = obj.message;
       messageArr.push(messageText);
     });
-    let idx = Math.floor(Math.random() * messageArr.length);
+    const idx = Math.floor(Math.random() * messageArr.length);
     randomMsg = messageArr[idx];
   }
   dispatch({
@@ -33,10 +33,10 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         message: action.payload,
-      }
+      };
     default:
       return state;
   }
 };
-  
+
 export default reducer;
