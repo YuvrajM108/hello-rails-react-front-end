@@ -12,7 +12,7 @@ function App() {
   const greeting = useSelector((state) => state.greetingReducer);
   useEffect(() => {
     getGreetingAction();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line
   }, []);
 
   return (
