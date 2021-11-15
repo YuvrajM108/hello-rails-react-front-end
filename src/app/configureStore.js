@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import greetingReducer from './greetingsActions';
 
-export const store = combineReducers({
+export const reducers = combineReducers({
   greetingReducer,
 });
 
