@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Rails React
+# Hello Rails React Front End
 
 > In this project I used React and Redux to design a single-page application that displays a random greeting fetched from a Rails API.
 
